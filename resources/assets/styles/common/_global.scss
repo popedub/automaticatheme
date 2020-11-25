@@ -1,0 +1,24 @@
+body {
+  font-family: "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.f-small {
+  font-size: $f36;
+  line-height: 1.2;
+}
+
+.f-regular {
+  font-size: $f46;
+  line-height: 1.2;
+}
+
+.f-medium {
+  font-size: $f52;
+  line-height: 1.1;
+}
+
+.f-big {
+  font-size: $t86;
+}
