@@ -89,3 +89,28 @@ add_filter('comments_template', function ($comments_template) {
 
     return $comments_template;
 }, 100);
+add_filter('bladesvg', function () {
+    return [
+        'svg_path' => 'resources/svg',
+        'spritesheet_path' => 'resources/svg/spritesheet.svg',
+        'spritesheet_url' => '',
+        'sprite_prefix' => '',
+        'inline' => true,
+        'class' => ''
+    ];
+});
+
+// REMOVE EMOJI ICONS
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
+
+add_filter('bladesvg', function () {
+    return [
+        'svg_path' => 'resources/assets/svg',
+        'spritesheet_path' => '',
+        'spritesheet_url' => '',
+        'sprite_prefix' => '',
+        'inline' => true,
+        'class' => ''
+    ];
+});

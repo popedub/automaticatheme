@@ -2,7 +2,7 @@
 @import "~bootstrap/scss/functions";
 
 $theme-colors: (
-  primary: #525ddc
+  primary: #000
 );
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
@@ -12,9 +12,10 @@ $navbar-light-toggler-icon-bg: none;
 $grid-gutter-width: 10px !default;
 
 // tamaños de fuentes
-$f36: 36px;
+$f28: 28px;
+$f36: 1.89vw;//36px;
 $f46: 46px;
-$f52: 52px;
+$f52: 2.7vw;//52px;
 $t86: 86px;
 
 $grid-breakpoints: (

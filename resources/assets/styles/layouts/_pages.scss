@@ -1,12 +1,21 @@
 body.home {
   h2 {
-    @include media-breakpoint-up(lg) {
-      // margin-bottom: 0;
+    @include media-breakpoint-up(md) {
+      font-size: 5vw;
     }
 
     @include media-breakpoint-up(xl) {
-      font-size: 9.625rem;
+      font-size: 8vw;//9.625rem;
       line-height: 0.85;
     }
   }
+}
+
+#sb_instagram #sbi_images .sbi_item:nth-child(2) {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.sbi_photo {
+  background-size: contain !important;
 }

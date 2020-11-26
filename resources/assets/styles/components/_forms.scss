@@ -24,7 +24,7 @@
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
   width: 100%;
   font-style: italic;
   font-size: $f36;
@@ -38,6 +38,30 @@ input::placeholder {
 
 #mc-embedded-subscribe {
   border: none;
+  border-bottom: 2px solid;
   font-size: $f36;
+  padding: 0;
   background-color: transparent;
+}
+
+span.arrow {
+  font-size: $f36;
+  margin-right: 20px;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0 !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
 }
