@@ -46,6 +46,7 @@
   @query([
   'cat' => 17,
   'posts_per_page' => 2,
+  'post_type' => 'actividad',
   ])
 
   @posts

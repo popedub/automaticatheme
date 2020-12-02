@@ -1,6 +1,12 @@
 <header class="banner fixed-top">
   <div class="container-fluid pt-4 padd-head">
-    <a class="brand" href="{{ home_url('/') }}"><h1>{!! get_bloginfo('name', 'display') !!}</h1></a>
+    <a class="brand" href="{{ home_url('/') }}">
+      @if (!is_single())
+        <h1>{!! get_bloginfo('name', 'display') !!}</h1>
+      @else
+      {!! get_bloginfo('name', 'display') !!}
+      @endif
+    </a>
     <a id="menu" class="btn-menu">@svg('ico-menu', 'ico-menu')</a>
   </div>
 </header>

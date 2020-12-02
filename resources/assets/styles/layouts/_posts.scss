@@ -1,0 +1,50 @@
+h1.entry-title {
+  font-size: $t156;
+}
+
+.entry-content {
+  h3 {
+    font-size: $t86;
+    font-weight: 400;
+  }
+}
+
+//galeria
+.lg-backdrop,
+.lg-toolbar {
+  background-color: white !important;
+}
+
+.lg-backdrop.in {
+  opacity: 0.85;
+}
+
+.lg-toolbar {
+  opacity: 1;
+}
+
+.lg-close.lg-icon {
+  color: black;
+  margin-top: 10px;
+  margin-right: 20px;
+
+  &::after {
+    content: url("./svg/close-menu.svg");
+  }
+}
+
+.lg-actions .lg-next,
+.lg-actions .lg-prev {
+  background-color: transparent;
+  font-size: $f36;
+}
+
+.lg-next::before {
+  content: "►" !important;
+  color: black;
+}
+
+.lg-prev::after {
+  content: "◄" !important;
+  color: black;
+}

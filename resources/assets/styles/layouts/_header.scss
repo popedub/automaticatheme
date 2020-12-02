@@ -190,7 +190,8 @@
   @extend .nav-link;
 }
 
-.brand h1 {
+.brand h1,
+.brand {
   font-size: 1.75rem;
   text-transform: uppercase;
 }
