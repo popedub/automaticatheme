@@ -17,23 +17,7 @@
   <div class="entry-content col-12 col-lg-8 offset-lg-4 mt-3 mb-5 f-small">
     @field('descripcion')
   </div>
-  @hasfield('galeria')
-  <div class="col-12">
-    <div class="f-big mb-4">{{ __('Imágenes','automaticatheme') }}</div>
-    <div id="galeria" class="row">
-      @php $g = get_field('galeria')@endphp
-
-        @foreach ($g as $foto)
-        <a href="@php echo $foto['sizes']['featured']@endphp" class="col-12 col-lg-4 mb-2">
-          <img class="img-fluid" src="@php echo $foto['sizes']['media']@endphp" alt="">
-        </a>
-        @endforeach
-
-
-
-    </div>
-  </div>
-  @endfield
+  @include('partials.galeria')
   <footer>
     {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav">
       <p>' . __('Pages:', 'sage'), 'after' => '</p>
