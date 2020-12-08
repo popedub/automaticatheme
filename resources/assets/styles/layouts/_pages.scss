@@ -5,7 +5,7 @@ body.home {
     }
 
     @include media-breakpoint-up(xl) {
-      font-size: 8vw;//9.625rem;
+      font-size: 8vw; //9.625rem;
       line-height: 0.85;
     }
   }
@@ -20,4 +20,21 @@ body.home {
   background-size: contain !important;
 }
 
-//info
+//talleres
+.padd {
+  padding: 50px 0;
+}
+
+.desplegables {
+  .desplegable:nth-child(3) {
+    border-bottom: 1px solid black;
+  }
+}
+
+//apoyo
+.agradecimientos {
+  h6 {
+    font-size: $f20;
+    font-weight: 400;
+  }
+}
