@@ -19,8 +19,8 @@
       @hasfield('en_venta')
       <div class="label text-uppercase f-28">{{ __('En Venta','automaticatheme') }}</div>
       @endfield
-      <h3 class="f-28 mt-3">@field('titulo_categoria')<br>
-        @field('subtitulo_categoria')</h3>
+      <h3 class="f-28 mt-3">@title @field('subtitulo')<br>
+        @field('resumen')</h3>
     </a>
   </div>
 

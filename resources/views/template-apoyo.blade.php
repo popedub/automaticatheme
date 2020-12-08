@@ -44,7 +44,10 @@
         @field('agradecimientos')
       </div>
       <div class="col-12">
-        <div class="row">
+        <div class="mb-5">
+          @field('texto_apoyos')
+        </div>
+        <div class="row pt-5">
           @fields('logos')
           <div class="col-4 col-lg-2 d-flex algin-items-center">
             <img class="img-fluid" src="@sub('logo','url')" alt="">

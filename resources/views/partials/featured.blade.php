@@ -1,4 +1,4 @@
-<article @php post_class('col-12 order-1') @endphp>
+<article @php post_class('col-12') @endphp>
 <header>
   <h2 class="text-uppercase t-bigger">@title</h2>
 </header>
@@ -18,7 +18,4 @@
   </div>
 </div>
 </article>
-<div class="t-bigger order-3">
-  @include('partials.page-header')
-</div>
 

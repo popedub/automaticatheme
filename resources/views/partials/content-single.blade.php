@@ -5,7 +5,7 @@
   <div class="col-12 col-lg-4 d-flex flex-column justify-content-between f-regular">
     <div>@field('subtitulo')</div>
     <div>
-      <span>&#9654;</span> @category<br>
+      <span>&#9654;</span>@include('partials.tags')<br>
       @field('fecha')@hasfield('hora') - @field('hora')h @endfield
     </div>
   </div>

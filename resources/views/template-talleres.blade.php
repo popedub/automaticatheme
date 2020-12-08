@@ -20,7 +20,7 @@
 
     </div>
     <div>
-      <span class="f-small">&#9654;</span> <a href="#" class="f-regular"> {{ __('Inscríbete', 'automaticatheme') }} </a>
+      <span class="f-small">&#9654;</span> <a href="mailto:@field('mail')" class="f-regular" target="_blank"> {{ __('Inscríbete', 'automaticatheme') }} </a>
     </div>
   </div>
   <div class="col-12 col-lg-8">

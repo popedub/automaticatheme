@@ -1,5 +1,7 @@
 body.home {
   h2 {
+    font-weight: 400;
+
     @include media-breakpoint-up(md) {
       font-size: 5vw;
     }

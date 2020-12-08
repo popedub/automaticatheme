@@ -6,35 +6,42 @@ body {
 
 .f-20 {
   font-size: $f20;
+  font-weight: 400;
 }
 
 .f-28 {
   font-size: $f28;
+  font-weight: 400;
 }
 
 .f-small {
   font-size: $f36;
   line-height: 1.2;
+  font-weight: 400;
 }
 
 .f-regular {
   font-size: $f46;
   line-height: 1.2;
+  font-weight: 400;
 }
 
 .f-medium {
   font-size: $f52;
   line-height: 1.1;
+  font-weight: 400;
 }
 
 .f-big {
   font-size: $t86;
-  line-height: 1;
+  line-height: 1.2;
+  font-weight: 400;
 }
 
 .t-bigger {
   font-size: $t156;
   line-height: 1;
+  font-weight: 400;
 }
 
 .wrap {
@@ -45,3 +52,12 @@ h4 {
   font-weight: 400;
 }
 
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.gris {
+  color: grey;
+}
