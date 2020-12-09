@@ -3,7 +3,7 @@
 
     <header>
       <img class="img-fluid" src="@thumbnail('grande', false)" alt="">
-      <div class="d-flex justify-content-between f-small">
+      <div class="d-flex justify-content-between f-small mt-3">
         <div>
           <h2 class="entry-title f-small mb-0">@title @field('subtitulo')</h2>
           @field('tipo_de_actividad')

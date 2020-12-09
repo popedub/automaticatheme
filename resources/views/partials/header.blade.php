@@ -1,12 +1,17 @@
 <header class="banner fixed-top">
-  <div class="container-fluid pt-4 padd-head">
+  <div class="container-fluid pt-3 padd-head d-flex align-items-end">
     <a class="brand" href="{{ home_url('/') }}">
       @if (!is_single())
         <h1>{!! get_bloginfo('name', 'display') !!}</h1>
       @else
-      {!! get_bloginfo('name', 'display') !!}
+      <div class="ml-auto">{!! get_bloginfo('name', 'display') !!}</div>
+
       @endif
     </a>
+    @php
+    do_action('wpml_add_language_selector');
+    @endphp
+
     <a id="menu" class="btn-menu">@svg('ico-menu', 'ico-menu')</a>
   </div>
 </header>

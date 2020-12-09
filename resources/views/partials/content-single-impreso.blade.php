@@ -68,7 +68,7 @@
         @endfield
 
         @hasfield('cliente')
-        {{ __('Socio a cargo:','automaticatheme') }} @field('cliente')<br>
+        {{ __('Cliente:','automaticatheme') }} @field('cliente')<br>
         @endfield
 
         @hasfield('precio_final_cliente')
@@ -76,7 +76,7 @@
         @endfield
 
         @hasfield('distribuidor_del_papel')
-        {{ __('Precio final cliente:','automaticatheme') }} @field('distribuidor_del_papel')<br>
+        {{ __('Distribuidor del papel:','automaticatheme') }} @field('distribuidor_del_papel')<br>
         @endfield
         </div>
         @endif

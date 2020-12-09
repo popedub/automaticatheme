@@ -28,7 +28,7 @@
   </div>
   @endfield
   @endposts
-  <h3 class="t-bigger text-uppercase mt-5 mb-5">{{ __('Talleres', 'automaticatheme') }}</h3>
+  <h3 class="t-bigger text-uppercase mt-5 mb-5 pt-3">{{ __('Talleres', 'automaticatheme') }}</h3>
   <div class="col-12 f-regular mb-5">
     @field('intro')
   </div>
@@ -38,7 +38,7 @@
   <div class="desplegables w-100">
     @fields('tipos_de_talleres')
     <div class="desplegable col-12 border-top border-primary">
-      <a class="d-flex align-items-center justify-content-between f-big" data-toggle="collapse" href="#taller{{ $i }}"
+      <a class="d-flex align-items-center justify-content-between f-big acordeon" data-toggle="collapse" href="#taller{{ $i }}"
         role="button" aria-expanded="false" aria-controls="introduccion"><span>@sub('titulo')</span> <span
           class="f-small">&#9654;</span> </a>
           <div class="collapse" id="taller{{ $i }}">
@@ -52,8 +52,8 @@
     @endfields
   </div>
 </div>
-<div class="row mt-5">
-  <h3 class="f-big mb-5">
+<div class="row mt-5 pt-5">
+  <h3 class="f-big mb-5 mt-5">
     {!! App::title() !!} <span class="f-regular">&#9654;</span> {{ __('Archivo', 'automaticatheme') }}
   </h3>
 </div>

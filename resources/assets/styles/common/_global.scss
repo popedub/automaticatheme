@@ -4,6 +4,15 @@ body {
   color: black;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
 .f-20 {
   font-size: $f20;
   font-weight: 400;
@@ -52,11 +61,41 @@ h4 {
   font-weight: 400;
 }
 
-a {
-  &:hover {
+a.acordeon,
+a.wpml-ls-link {
+  &:hover,
+  &:active,
+  &:focus {
     text-decoration: none;
   }
 }
+
+a:not(.sbi_photo):not(.btn-menu):not(.link-linea):not(.acordeon):not(.wpml-ls-link),
+a.wpml-ls-link > span {
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease-in-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    border-bottom: 2px solid black;
+  }
+}
+/* stylelint-disable */
+.link-linea,
+.wpml-ls-current-language > .wpml-ls-link > span {
+  border-bottom: 2px solid black;
+  transition: border-bottom 0.3s ease-in-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+  }
+}
+/* stylelint-enable */
 
 .gris {
   color: grey;

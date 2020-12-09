@@ -12,7 +12,7 @@
 
   .ico-menu {
     width: 40px;
-    height: 45px;
+    height: 25px;
 
     g {
       box-sizing: unset;
@@ -193,10 +193,24 @@
 .brand h1,
 .brand {
   font-size: 1.75rem;
+  margin-bottom: 0;
   text-transform: uppercase;
 }
 
 .padd-head {
   padding-left: 35px;
   padding-right: 35px;
+}
+
+.wpml-ls-legacy-list-horizontal {
+  margin-left: auto;
+  margin-right: 70px;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  padding: 0;
+
+  a {
+    padding: 0 10px 0 0;
+    line-height: 1.5;
+  }
 }

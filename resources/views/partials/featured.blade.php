@@ -6,10 +6,16 @@
   <div class="col-12 col-lg-4 d-flex flex-column justify-content-between align-items-start">
     <div class="f-regular">
       @field('subtitulo')
-      @field('fecha')<br>
-      @field('hora')
+      <div class="mt-5">
+        @field('fecha')<br>
+        @hasfield('hora')
+        @field('hora')h
+        @endfield
+      </div>
+
     </div>
-    <a href="@permalink" class="f-small"><span>&#9654;</span> {{ __('Más info') }}</a>
+    <div class="f-small"><span>&#9654;</span><a href="@permalink" class=""> {{ __('Más info') }}</a></div>
+
   </div>
 
   <div class="col-12 col-lg-8 text-right">

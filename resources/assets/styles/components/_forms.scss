@@ -18,6 +18,12 @@
   @extend .btn-secondary;
 }
 
+.mc-field-group {
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 50px !important;
+  }
+}
+
 #mce-FNAME,
 #mce-LNAME,
 #mce-EMAIL {
@@ -27,7 +33,7 @@
   border-bottom: 2px solid;
   width: 100%;
   font-style: italic;
-  font-size: $f36;
+  font-size: $f28;
   margin-bottom: 10px;
 }
 
@@ -42,6 +48,14 @@ input::placeholder {
   font-size: $f36;
   padding: 0;
   background-color: transparent;
+  transition: border-bottom 0.3s ease-in-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+  }
 }
 
 span.arrow {

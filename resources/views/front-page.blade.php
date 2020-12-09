@@ -22,7 +22,8 @@
     <div>
       @field('texto_destacado')
     </div>
-    <a href="@field('enlace_bottom', 'url')"><span>&#9654;</span> @field('enlace_bottom','title')</a>
+    <div><span class="f-small">&#9654; </span> <a href="@field('enlace_bottom', 'url')" class="d-inline-block"> @field('enlace_bottom','title')</a></div>
+
   </div>
 
   <div class="col-12 col-lg-8 text-right">
@@ -39,7 +40,8 @@
     <h2 class="text-uppercase">
       {{ __('ACTIVIDADES', 'automaticatheme') }}
     </h2>
-    <a href="@permalink(207)" class="f-small"><span>&#9654;</span> {{ __('Ver todas', 'automaticatheme') }}</a>
+    <div class="f-small"><span>&#9654; </span><a href="@permalink(207)">{{ __('Ver todas', 'automaticatheme') }}</a></div>
+
   </div>
 
   @query([
@@ -67,33 +69,39 @@
 {{-- end actividades --}}
 
 {{-- talleres --}}
-<div class="row pt-5 mb-4">
+<div class="row pt-5 mb-5 pb-5">
   <div class="col-12 d-flex justify-content-between align-items-end mb-3">
     <h2 class="text-uppercase">
       {{ __('TALLERES', 'automaticatheme') }}
     </h2>
-    <a href="@permalink(141)" class="f-small"><span>&#9654;</span> {{ __('Ver talleres', 'automaticatheme') }}</a>
+
+
   </div>
   <div class="col-12 col-lg-6">
     <img class="img-fluid" src="@field('foto_talleres', 'url')" alt="@field('foto_talleres', 'alt')">
   </div>
   <div class="col-12 col-lg-6 f-small pl-2 d-lg-flex flex-lg-column justify-content-lg-between px-4">
     @field('texto_talleres')
-    <a href="#" class="f-small"><span>&#9654;</span> {{ __('Ver Talleres', 'automaticatheme') }}</a>
+    <div class="f-small"><span>&#9654; </span><a href="@permalink(141)">{{ __('Ver talleres', 'automaticatheme') }}</a>
+    </div>
+
   </div>
 </div>
 {{-- end talleres --}}
 
 {{-- newslater --}}
 <div class="row pt-5">
+  <div class="col-12 col-lg-6 d-lg-block d-none"><h3 class="f-big mb-5">{!! __('Amigos de L&#39;Automatica', 'automaticatheme') !!}</h3></div>
+  <div class="col-12 col-lg-6 d-lg-block d-none"><h3 class="f-big mb-5">{!! __('Newslater', 'automaticatheme') !!}</h3></div>
   <div class="col-12 col-lg-6">
-    <h3 class="f-big mb-5">{!! __('Amigos de L&#39;Automatica', 'automaticatheme') !!}</h3>
+    <h3 class="f-big mb-5 d-block d-lg-none">{!! __('Amigos de L&#39;Automatica', 'automaticatheme') !!}</h3>
     <div class="f-small">@field('texto_amigos')</div>
-    <a href="@permalink(10)" class="f-small"><span>&#9654;</span> {{ __('¡Hazte Amigo!', 'automaticatheme') }}</a>
+    <div class="f-small"><span>&#9654; </span><a href="@permalink(10)" class="link-linea">{{ __('¡Hazte Amigo!', 'automaticatheme') }}</a></div>
+
   </div>
   <div class="col-12 col-lg-6">
-    <h3 class="f-big mb-5">{!! __('Newslater', 'automaticatheme') !!}</h3>
-    <div class="f-small mb-5">
+    <h3 class="f-big mb-5 d-block d-lg-none">{!! __('Newslater', 'automaticatheme') !!}</h3>
+    <div class="f-small mb-5 pb-3">
       @field('texto_newslater')
     </div>
     <div>
