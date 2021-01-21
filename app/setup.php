@@ -52,9 +52,9 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
      */
     add_theme_support('post-thumbnails');
-    add_image_size( 'featured', 1260, 840, true);
-    add_image_size( 'grande', 920, 640, true);
-    add_image_size( 'media', 610, 420, true);
+    add_image_size( 'featured', 1620, 1090, true);
+    add_image_size( 'grande', 1210, 835, true);
+    add_image_size( 'media', 800, 550, true);
 
     /**
      * Enable HTML5 markup support

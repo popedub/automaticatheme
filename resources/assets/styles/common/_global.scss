@@ -1,6 +1,6 @@
 body {
   font-family: "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  padding: 30px;
+  padding: 15px;
   color: black;
 }
 
@@ -13,6 +13,10 @@ h6 {
   font-weight: 400;
 }
 
+h1 {
+  line-height: 1;
+}
+
 .f-20 {
   font-size: $f20;
   font-weight: 400;
@@ -23,7 +27,8 @@ h6 {
   font-weight: 400;
 }
 
-.f-small {
+.f-small,
+.f-medium {
   font-size: $f36;
   line-height: 1.2;
   font-weight: 400;
@@ -35,15 +40,15 @@ h6 {
   font-weight: 400;
 }
 
-.f-medium {
-  font-size: $f52;
-  line-height: 1.1;
-  font-weight: 400;
-}
+// .f-medium {
+//   font-size: $f52;
+//   line-height: 1.1;
+//   font-weight: 400;
+// }
 
 .f-big {
   font-size: $t86;
-  line-height: 1.2;
+  line-height: 1.1;
   font-weight: 400;
 }
 
@@ -70,7 +75,7 @@ a.wpml-ls-link {
   }
 }
 
-a:not(.sbi_photo):not(.btn-menu):not(.link-linea):not(.acordeon):not(.wpml-ls-link),
+a:not(.sbi_photo):not(.btn-menu):not(.link-linea):not(.acordeon):not(.wpml-ls-link):not(.lightbox),
 a.wpml-ls-link > span {
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.3s ease-in-out;

@@ -15,7 +15,7 @@
   <h2 class="t-bigger text-uppercase">{{ __('Próximo taller','automaticatheme') }}</h2>
   <div class="col-12 col-lg-4 d-flex flex-column justify-content-between">
     <div>
-      <h3 class="f-regular mb-5">@title</h3>
+      <h3 class="f-regular">@title</h3>
       <span class="f-regular">@field('fecha')</span>
 
     </div>
@@ -28,14 +28,14 @@
   </div>
   @endfield
   @endposts
-  <h3 class="t-bigger text-uppercase mt-5 mb-5 pt-3">{{ __('Talleres', 'automaticatheme') }}</h3>
-  <div class="col-12 f-regular mb-5">
+  <h3 class="t-bigger text-uppercase pt-3 mb-2">{{ __('Talleres', 'automaticatheme') }}</h3>
+  <div class="col-12 f-regular">
     @field('intro')
   </div>
   @php
   $i = 0;
   @endphp
-  <div class="desplegables w-100">
+  <div class="desplegables w-100 mt-3">
     @fields('tipos_de_talleres')
     <div class="desplegable col-12 border-top border-primary">
       <a class="d-flex align-items-center justify-content-between f-big acordeon" data-toggle="collapse" href="#taller{{ $i }}"
@@ -52,7 +52,7 @@
     @endfields
   </div>
 </div>
-<div class="row mt-5 pt-5">
+<div class="row mt-2 pt-4">
   <h3 class="f-big mb-5 mt-5">
     {!! App::title() !!} <span class="f-regular">&#9654;</span> {{ __('Archivo', 'automaticatheme') }}
   </h3>

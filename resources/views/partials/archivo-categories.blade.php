@@ -9,7 +9,7 @@
 @posts
 <article class="row f-small">
   <header class="col-12 col-lg-6">
-    <h4 class="entry-title f-small"><a href="@permalink">@title @field('subtitulo')</a></h4>
+    <span class="entry-title f-small"><a href="@permalink" class="link-linea">@title @field('subtitulo')</a></span>
   </header>
   @php
   $tags = get_the_tags()
@@ -17,7 +17,7 @@
   @if ($tags)
   <div class="col-12 col-lg-2 offset-lg-2">
     @foreach ($tags as $tag)
-    <a href="{{ get_tag_link($tag->term_id) }}">{{ $tag->name }}</a>
+    <a href="{{ get_tag_link($tag->term_id) }}" class="link-linea">{{ $tag->name }}</a>
     @endforeach
   </div>
   @endif
@@ -40,7 +40,8 @@
 @posts
 <article class="row f-small">
   <header class="col-12 col-lg-8">
-    <h4 class="entry-title f-small"><a href="@permalink">@title @field('subtitulo')</a></h4>
+    <span class="entry-title f-small"><a href="@permalink" class="link-linea">@title @field('subtitulo')</a></span>
+
   </header>
   @php
   $tags = get_the_tags()
@@ -48,7 +49,7 @@
   @if ($tags)
   <div class="col-12 col-lg-2">
     @foreach ($tags as $tag)
-    <a href="{{ get_tag_link($tag->term_id) }}">{{ $tag->name }}</a>
+    <a href="{{ get_tag_link($tag->term_id) }}" class="link-linea">{{ $tag->name }}</a>
     @endforeach
   </div>
   @endif

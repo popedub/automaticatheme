@@ -16,8 +16,8 @@
 @include('partials.featured')
 @endposts
 
-<div class="col-12">
-  <div class="t-bigger">
+<div class="col-12 mb-1">
+  <div class="t-bigger mb-2">
     @include('partials.page-header')
   </div>
 </div>
@@ -44,7 +44,7 @@
 </div>
 <div class="row mt-5">
   <h3 class="f-big mb-5">
-    {!! App::title() !!} <span class="f-regular">&#9654;</span> {{ __('Archivo', 'automaticatheme') }}
+    {!! App::title() !!} <span class="f-regular acordeon">&#9654;</span> {{ __('Archivo', 'automaticatheme') }}
   </h3>
 
 </div>

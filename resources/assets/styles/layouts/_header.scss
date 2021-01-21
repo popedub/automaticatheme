@@ -2,12 +2,12 @@
   z-index: 100;
   position: fixed;
   cursor: pointer;
-  right: 32px;
-  top: 30px;
+  right: 16px;
+  top: 15px;
 
   @include media-breakpoint-up(lg) {
-    right: 35px;
-    top: 30px;
+    right: 25px;
+    top: 15px;
   }
 
   .ico-menu {
@@ -94,7 +94,7 @@
 /* Overlay closing cross */
 .overlay .overlay-close {
   position: absolute;
-  top: 30px;
+  top: 15px;
   right: 0;
   display: block;
   overflow: hidden;
@@ -104,7 +104,7 @@
   z-index: 1032;
 
   @include media-breakpoint-up(lg) {
-    right: 30px;
+    right: 15px;
   }
 }
 
@@ -198,19 +198,19 @@
 }
 
 .padd-head {
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .wpml-ls-legacy-list-horizontal {
   margin-left: auto;
-  margin-right: 70px;
+  margin-right: 80px;
   font-size: 1.75rem;
   line-height: 1.5;
   padding: 0;
 
   a {
-    padding: 0 10px 0 0;
+    padding: 0 15px 0 0;
     line-height: 1.5;
   }
 }

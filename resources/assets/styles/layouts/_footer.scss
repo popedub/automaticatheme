@@ -1,4 +1,9 @@
 footer.content-info {
   margin-top: 150px;
   font-size: $f36;
+  line-height: 1.2;
+
+  p {
+    margin-bottom: 0;
+  }
 }

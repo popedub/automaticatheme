@@ -1,11 +1,11 @@
 <article @php post_class('row') @endphp>
   <header class="col-12">
-    <h1 class="entry-title">{!! get_the_title() !!}</h1>
+    <h1 class="entry-title text-uppercase">{!! get_the_title() !!}</h1>
   </header>
   <div class="col-12 col-lg-4 d-flex flex-column justify-content-between f-regular">
     <div>@field('subtitulo')</div>
     <div>
-      <span>&#9654;</span>@include('partials.tags')<br>
+      <span>&#9654;</span> @include('partials.tags')<br>
       @field('fecha')@hasfield('hora') - @field('hora')h @endfield
     </div>
   </div>
@@ -26,7 +26,7 @@
 
 </article>
 <div class="row mt-5">
-  <div class="col-12 f-big">
+  <div class="col-12 f-big mb-4">
     @category <span class="f-regular">&#9654;</span> {{ 'Archivo', 'automaticatheme' }}
   </div>
 </div>

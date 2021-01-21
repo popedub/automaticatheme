@@ -62,7 +62,7 @@
         @endfield
 
         @if (is_user_logged_in())
-        <div class="mt-3">
+        <div class="mt-3 gris">
         @hasfield('socio_a_cargo')
         {{ __('Socio a cargo:','automaticatheme') }} @field('socio_a_cargo')<br>
         @endfield
@@ -85,7 +85,7 @@
 
     <div>
       @hasfield('en_venta')
-      {{ __('En venta', 'automaticatheme') }} <span>&#9654;</span> @field('precio')<br>
+      <span>&#9654;</span> @field('precio')<br>
       <div class="f-20 mt-3">{{ __('Pedidos: ', 'automaticatheme') }}<a href="mailto:tienda@lautomatica.org"
           target="blank">tienda@lautomatica.org</a></div>
       @endfield
@@ -104,7 +104,7 @@
     @field('descripcion')
   </div>
   @include('partials.galeria')
-  <footer class="w-100 mt-5 f-regular">
+  <footer class="w-100 mt-3 f-regular">
     <div class="col-12 d-flex align-items-center justify-content-between">
       <div>{{ previous_post_link('%link', '<span>◄</span> Anterior') }}</div>
       <div>{{ next_post_link('%link', 'Siguiente <span>►</span>') }}</div>

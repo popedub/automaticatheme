@@ -5,7 +5,7 @@
 
 <div class="row pb-5">
   <div class="col-12">
-    <h2 class="t-bigger text-uppercase mb-5">{!! App::title() !!}</h2>
+    <h2 class="t-bigger text-uppercase mb-1">{!! App::title() !!}</h2>
   </div>
 
   @query([

@@ -12,16 +12,16 @@
 </div>
 <div class="row">
   @while(have_posts()) @php the_post() @endphp
-  <div class="col-12 f-regular">
+  <div class="col-12 f-small">
     @field('intro')
   </div>
-  <div class="col-12 mt-5">
+  <div class="col-12 mt-1">
     <img class="img-fluid mx-auto d-block" src="@thumbnail('full', false)" alt="L'automatica imprenta">
   </div>
-  <div class="col-12 f-regular mt-5 pb-5">
+  <div class="col-12 f-small mt-3 pb-5">
     @field('pie')
   </div>
-  <div class="col-12 mt-5 f-big">
+  <div class="col-12 mt-5 f-big mb-4">
     {{ __('Miembros','automaticatheme') }}
   </div>
   @layouts('miembros')
@@ -32,7 +32,7 @@
       @hassub('colectivos')
         <div class="col-4 f-regular">
           @fields('colectivos')
-          <a href="@sub('enlace_del_colectivo')" target="_blank">
+          <a href="@sub('enlace_del_colectivo')" target="_blank" class="link-linea">
             @sub('nombre_del_colectivo')
           </a>
           @endfields

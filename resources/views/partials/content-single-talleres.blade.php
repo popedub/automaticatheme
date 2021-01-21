@@ -23,8 +23,8 @@
   </footer>
 
 </article>
-<div class="row mt-5 mb-5">
-  <div class="col-12 f-big">
+<div class="row mt-5">
+  <div class="col-12 f-big mb-4">
     @category <span class="f-regular">&#9654;</span> {{ 'Archivo', 'automaticatheme' }}
   </div>
 </div>
