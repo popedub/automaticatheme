@@ -29,9 +29,14 @@ h1 {
 
 .f-small,
 .f-medium {
-  font-size: $f36;
-  line-height: 1.2;
-  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+
+  @include media-breakpoint-up(lg) {
+    font-size: $f36;
+    line-height: 1.2;
+    font-weight: 400;
+  }
 }
 
 .f-regular {

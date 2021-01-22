@@ -18,11 +18,15 @@
     <h2 class="text-uppercase">@field('titulo_destacado')</h2>
   </div>
 
-  <div class="col-12 col-lg-4 text-lowercase d-lg-flex flex-lg-column justify-content-lg-between f-medium">
+  <div class="col-12 col-lg-4 text-lowercase d-lg-flex flex-lg-column justify-content-lg-between f-medium order-2 order-lg-1">
     <div>
+      <a href="@field('enlace_bottom', 'url')" class="">
       @field('texto_destacado')
+      </a>
     </div>
-    <div><span class="f-small">&#9654; </span> <a href="@field('enlace_bottom', 'url')" class="d-inline-block link-linea"> @field('enlace_bottom','title')</a></div>
+    <div class="d-none d-lg-block">
+      <span class="f-small">&#9654; </span> <a href="@field('enlace_bottom', 'url')" class="d-inline-block link-linea"> @field('enlace_bottom','title')</a>
+    </div>
 
   </div>
 
@@ -40,7 +44,7 @@
     <h2 class="text-uppercase">
       {{ __('ACTIVIDADES', 'automaticatheme') }}
     </h2>
-    <div class="f-small"><span>&#9654; </span><a href="@permalink(207)">{{ __('Ver todas', 'automaticatheme') }}</a></div>
+    <div class="f-small d-none d-lg-block"><span>&#9654; </span><a href="@permalink(207)">{{ __('Ver todas', 'automaticatheme') }}</a></div>
 
   </div>
 
@@ -52,10 +56,10 @@
   ])
 
   @posts
-  <div class="col-12 col-lg-6 f-small">
+  <div class="col-12 col-lg-6 f-small mt-3 mt-lg-0">
     <a href="@permalink">
       <img class="img-fluid mb-2" src="@thumbnail('grande', false)" alt="">
-      <div class="d-flex justify-content-between">
+      <div class="d-lg-flex justify-content-between">
         <div>
           <h3 class="entry-title f-small mb-0 link-linea d-inline-block">@title @field('subtitulo')</h3>
           <span class="d-block">@field('tipo_de_actividad')</span>
@@ -80,7 +84,7 @@
   <div class="col-12 col-lg-6">
     <img class="img-fluid" src="@field('foto_talleres', 'url')" alt="@field('foto_talleres', 'alt')">
   </div>
-  <div class="col-12 col-lg-6 f-small pl-2 d-lg-flex flex-lg-column justify-content-lg-between px-4">
+  <div class="col-12 col-lg-6 f-small pl-2 d-lg-flex flex-lg-column justify-content-lg-between px-lg-4">
     @field('texto_talleres')
     <div class="f-small"><span>&#9654; </span><a href="@permalink(141)" class="link-linea">{{ __('Ver talleres', 'automaticatheme') }}</a>
     </div>

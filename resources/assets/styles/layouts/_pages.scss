@@ -1,6 +1,10 @@
 body.home {
   h2 {
     font-weight: 400;
+    font-size: 51px;
+    line-height: 0.9;
+    hyphens: auto;
+    word-break: break-word;
 
     @include media-breakpoint-up(md) {
       font-size: 5vw;
