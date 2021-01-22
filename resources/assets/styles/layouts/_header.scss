@@ -2,7 +2,7 @@
   z-index: 100;
   position: fixed;
   cursor: pointer;
-  right: 16px;
+  right: 15px;
   top: 20px;
 
   @include media-breakpoint-up(lg) {
@@ -105,7 +105,7 @@
 .overlay .overlay-close {
   position: absolute;
   top: 15px;
-  right: 0;
+  right: 15px;
   display: block;
   overflow: hidden;
   background-color: transparent;
@@ -212,8 +212,13 @@
 }
 
 .padd-head {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include media-breakpoint-up(lg) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .wpml-lg {

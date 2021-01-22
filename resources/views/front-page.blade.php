@@ -73,7 +73,7 @@
 {{-- end actividades --}}
 
 {{-- talleres --}}
-<div class="row pt-2 mb-5 pb-5">
+<div class="row pt-2 mb-5 pb-lg-5">
   <div class="col-12 d-flex justify-content-between align-items-end mb-1">
     <h2 class="text-uppercase">
       {{ __('TALLERES', 'automaticatheme') }}
@@ -82,7 +82,7 @@
 
   </div>
   <div class="col-12 col-lg-6">
-    <img class="img-fluid" src="@field('foto_talleres', 'url')" alt="@field('foto_talleres', 'alt')">
+    <img class="img-fluid mb-2" src="@field('foto_talleres', 'url')" alt="@field('foto_talleres', 'alt')">
   </div>
   <div class="col-12 col-lg-6 f-small pl-2 d-lg-flex flex-lg-column justify-content-lg-between px-lg-4">
     @field('texto_talleres')
@@ -94,7 +94,7 @@
 {{-- end talleres --}}
 
 {{-- newslater --}}
-<div class="row pt-5">
+<div class="row pt-lg-5">
   <div class="col-12 col-lg-6 d-lg-block d-none"><h3 class="f-big mb-5">{!! __('Amigos de L&#39;Automatica', 'automaticatheme') !!}</h3></div>
   <div class="col-12 col-lg-6 d-lg-block d-none"><h3 class="f-big mb-5">{!! __('Newslater', 'automaticatheme') !!}</h3></div>
   <div class="col-12 col-lg-6">
@@ -103,7 +103,7 @@
     <div class="f-small"><span>&#9654; </span><a href="@permalink(10)" class="link-linea">{{ __('¡Hazte Amigo!', 'automaticatheme') }}</a></div>
 
   </div>
-  <div class="col-12 col-lg-6">
+  <div class="col-12 mt-5 mt-lg-0 col-lg-6">
     <h3 class="f-big mb-2 d-block d-lg-none">{!! __('Newslater', 'automaticatheme') !!}</h3>
     <div class="f-small mb-5 pb-3">
       @field('texto_newslater')

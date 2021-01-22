@@ -7,8 +7,8 @@
 ])
 
 @posts
-<article class="row f-small">
-  <header class="col-12 col-lg-6">
+<article class="row f-small d-none d-lg-flex">
+  <header class="col-12 col-lg-6 px-0 px-lg-1">
     <span class="entry-title f-small"><a href="@permalink" class="link-linea">@title @field('subtitulo')</a></span>
   </header>
   @php
@@ -26,7 +26,18 @@
   </div>
 </article>
 
+
 @endposts
+<div class="row f-small d-flex d-lg-none">
+  @posts
+  <article class="col-12 px-0 pt-3 pb-3 border-phone">
+    <header>
+      <a href="@permalink">@title @field('subtitulo')</a>
+    </header>
+  </article>
+  @endposts
+</div>
+
 @endif
 
 @if (is_page(141) || 'talleres' == get_post_type())
@@ -38,7 +49,7 @@
 ])
 
 @posts
-<article class="row f-small">
+<article class="row f-small d-none d-lg-flex">
   <header class="col-12 col-lg-8">
     <span class="entry-title f-small"><a href="@permalink" class="link-linea">@title @field('subtitulo')</a></span>
 
@@ -59,4 +70,13 @@
 </article>
 
 @endposts
+<div class="row f-small d-flex d-lg-none">
+  @posts
+  <article class="col-12 px-0 pt-3 pb-3 border-phone">
+    <header>
+      <a href="@permalink">@title</a>
+    </header>
+  </article>
+  @endposts
+</div>
 @endif

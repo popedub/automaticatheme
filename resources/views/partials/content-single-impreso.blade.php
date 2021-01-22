@@ -1,8 +1,8 @@
 <article @php post_class('row') @endphp>
-  <header class="col-12">
+  <header class="col-12 order-2 order-lg-1">
     <h1 class="entry-title text-uppercase">{!! get_the_title() !!}</h1>
   </header>
-  <div class="col-12 col-lg-4  f-regular d-flex flex-column justify-content-between">
+  <div class="col-12 col-lg-4  f-regular d-flex flex-column justify-content-between order-3 order-lg-2">
     <div class="mb-5">@field('subtitulo')<br>
       <div class="pt-5 f-20">
         @hasfield('fecha')
@@ -63,21 +63,21 @@
 
         @if (is_user_logged_in())
         <div class="mt-3 gris">
-        @hasfield('socio_a_cargo')
-        {{ __('Socio a cargo:','automaticatheme') }} @field('socio_a_cargo')<br>
-        @endfield
+          @hasfield('socio_a_cargo')
+          {{ __('Socio a cargo:','automaticatheme') }} @field('socio_a_cargo')<br>
+          @endfield
 
-        @hasfield('cliente')
-        {{ __('Cliente:','automaticatheme') }} @field('cliente')<br>
-        @endfield
+          @hasfield('cliente')
+          {{ __('Cliente:','automaticatheme') }} @field('cliente')<br>
+          @endfield
 
-        @hasfield('precio_final_cliente')
-        {{ __('Precio final cliente:','automaticatheme') }} @field('precio_final_cliente')<br>
-        @endfield
+          @hasfield('precio_final_cliente')
+          {{ __('Precio final cliente:','automaticatheme') }} @field('precio_final_cliente')<br>
+          @endfield
 
-        @hasfield('distribuidor_del_papel')
-        {{ __('Distribuidor del papel:','automaticatheme') }} @field('distribuidor_del_papel')<br>
-        @endfield
+          @hasfield('distribuidor_del_papel')
+          {{ __('Distribuidor del papel:','automaticatheme') }} @field('distribuidor_del_papel')<br>
+          @endfield
         </div>
         @endif
       </div>
@@ -95,16 +95,19 @@
     </div>
 
   </div>
-  <div class="col-12 col-lg-8">
-    <img class="img-fluid" src="@thumbnail('featured', false)" alt="">
+  <div class="col-12 col-lg-8 order-1 order-lg-3">
+    <img class="img-fluid mb-3 mb-lg-0" src="@thumbnail('featured', false)" alt="">
   </div>
 
 
-  <div class="entry-content col-12 col-lg-8 offset-lg-4 mt-3 mb-5 f-small">
+  <div class="entry-content col-12 col-lg-8 offset-lg-4 mt-3 mb-5 f-small order-4 order-lg-4">
     @field('descripcion')
   </div>
-  @include('partials.galeria')
-  <footer class="w-100 mt-3 f-regular">
+  <div class="order-5 order-lg-5">
+    @include('partials.galeria')
+  </div>
+
+  <footer class="w-100 mt-3 f-regular order-5 order-lg-5">
     <div class="col-12 d-flex align-items-center justify-content-between">
       <div>{{ previous_post_link('%link', '<span>◄</span> Anterior') }}</div>
       <div>{{ next_post_link('%link', 'Siguiente <span>►</span>') }}</div>

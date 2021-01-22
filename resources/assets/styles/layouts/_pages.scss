@@ -32,7 +32,14 @@ body.home {
 }
 
 .acordeon {
-  line-height: 1.3;
+  line-height: 1;
+  font-size: 27px;
+  padding: 15px 0;
+
+  @include media-breakpoint-up(lg) {
+    line-height: 1.1;
+    font-size: $t86;
+  }
 }
 
 .desplegables {
@@ -44,7 +51,11 @@ body.home {
 //apoyo
 .agradecimientos {
   h6 {
-    font-size: $f20;
+    font-size: 14px;
     font-weight: 400;
+
+    @include media-breakpoint-up(lg) {
+      font-size: $f20;
+    }
   }
 }

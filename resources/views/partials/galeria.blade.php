@@ -1,5 +1,5 @@
   @hasfield('galeria')
-  <div class="col-12">
+  <div class="col-12 px-0 px-lg-1">
     <div class="f-big mb-4">{{ __('Imágenes','automaticatheme') }}</div>
     <div id="galeria" class="row">
       @php $g = get_field('galeria')@endphp

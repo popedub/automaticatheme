@@ -5,8 +5,12 @@ h1.entry-title {
 
 .entry-content {
   h3 {
-    font-size: $t86;
+    font-size: 30px;
     font-weight: 400;
+
+    @include media-breakpoint-up(lg) {
+      font-size: $t86;
+    }
   }
 }
 

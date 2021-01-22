@@ -6,7 +6,7 @@
 @section('content')
 
 
-<div class="row pb-5">
+<div class="row pb-lg-5">
 @query([
   'post_type' => 'actividad',
   'meta_key' => 'featured',
@@ -42,7 +42,7 @@
 @endposts
 
 </div>
-<div class="row mt-5">
+<div class="row mt-lg-5">
   <h3 class="f-big mb-5">
     {!! App::title() !!} <span class="f-regular acordeon">&#9654;</span> {{ __('Archivo', 'automaticatheme') }}
   </h3>

@@ -44,7 +44,7 @@
         @field('agradecimientos')
       </div>
       <div class="col-12">
-        <div class="mb-5" style="font-size: 20px">
+        <div class="mb-5 f-20">
           @field('texto_apoyos')
         </div>
         <div class="row pt-5">
@@ -52,7 +52,7 @@
           <div class="col-4 col-lg-1 d-flex algin-items-center">
             <img class="img-fluid" src="@sub('logo','url')" alt="">
           </div>
-          <div class="col-lg-1"></div>
+          <div class=" col-1 col-lg-1"></div>
           @endfields
         </div>
       </div>

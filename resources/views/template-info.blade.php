@@ -18,10 +18,10 @@
   <div class="col-12 mt-1">
     <img class="img-fluid mx-auto d-block" src="@thumbnail('full', false)" alt="L'automatica imprenta">
   </div>
-  <div class="col-12 f-small mt-3 pb-5">
+  <div class="col-12 f-small mt-3 pb-lg-5">
     @field('pie')
   </div>
-  <div class="col-12 mt-5 f-big mb-4">
+  <div class="col-12 mt-4 mt-lg-5 f-big mb-4">
     {{ __('Miembros','automaticatheme') }}
   </div>
   @layouts('miembros')
@@ -40,7 +40,7 @@
       @endsub
     @endlayout
   @endlayouts
-  <div class="col-12 mt-5">
+  <div class="col-12 mt-5 px-0 px-lg-1">
     @include('partials.galeria')
   </div>
   @endwhile

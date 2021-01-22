@@ -1,7 +1,11 @@
 body {
   font-family: "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  padding: 15px;
+  padding: 10px;
   color: black;
+
+  @include media-breakpoint-up(lg) {
+    padding: 15px;
+  }
 }
 
 h1,
@@ -18,13 +22,21 @@ h1 {
 }
 
 .f-20 {
-  font-size: $f20;
+  font-size: 14px;
   font-weight: 400;
+
+  @include media-breakpoint-up(lg) {
+    font-size: $f20;
+  }
 }
 
 .f-28 {
-  font-size: $f28;
+  font-size: 18px;
   font-weight: 400;
+
+  @include media-breakpoint-up(lg) {
+    font-size: $f28;
+  }
 }
 
 .f-small,
@@ -40,31 +52,43 @@ h1 {
 }
 
 .f-regular {
-  font-size: $f46;
-  line-height: 1.2;
+  font-size: 18px;
+  line-height: 1.3;
   font-weight: 400;
+
+  @include media-breakpoint-up(lg) {
+    font-size: $f46;
+    line-height: 1.2;
+  }
 }
 
-// .f-medium {
-//   font-size: $f52;
-//   line-height: 1.1;
-//   font-weight: 400;
-// }
-
 .f-big {
-  font-size: $t86;
+  font-size: 30px;
   line-height: 1.1;
   font-weight: 400;
+
+  @include media-breakpoint-up(lg) {
+    font-size: $t86;
+  }
 }
 
 .t-bigger {
-  font-size: $t156;
-  line-height: 1;
+  font-size: 30px;
+  line-height: 1.1;
   font-weight: 400;
+
+  @include media-breakpoint-up(lg) {
+    font-size: $t156;
+    line-height: 1;
+  }
 }
 
 .wrap {
-  padding-top: 50px;
+  padding-top: 75px;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 50px;
+  }
 }
 
 h4 {
@@ -109,4 +133,16 @@ a.wpml-ls-link > span {
 
 .gris {
   color: grey;
+}
+
+.border-phone {
+  border-bottom: 2px solid black;
+}
+
+.border-phone:first-child {
+  border-top: 2px solid black;
+}
+
+.giro {
+  rotate: 90deg;
 }
