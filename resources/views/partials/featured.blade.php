@@ -20,7 +20,7 @@
 
   <div class="col-12 col-lg-8 text-right order-1 order-lg-2">
     <img class="img-fluid" src="@thumbnail('featured', false)" alt="">
-    <h2 class="text-uppercase t-bigger d-block d-lg-none mt-1 text-left">@title</h2>
+    <h2 class="text-uppercase t-bigger d-block d-lg-none mt-2 text-left">@title</h2>
   </div>
 </div>
 </article>

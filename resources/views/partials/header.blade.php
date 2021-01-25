@@ -22,7 +22,9 @@
   <div class="container-fluid padd-head">
     <button type="button" id="closeMenu" class="overlay-close font-3">@svg('close-menu','ico-close')</button>
     <nav class="nav-primary">
-      <div class="d-block d-lg-none">{!! get_bloginfo('name', 'display') !!}</div>
+      <a class="brand" href="{{ home_url('/') }}">
+        <div class="d-block d-lg-none">{!! get_bloginfo('name', 'display') !!}</div>
+      </a>
       @if (has_nav_menu('primary_navigation'))
       {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
       @endif

@@ -30,9 +30,9 @@
 
   </div>
 
-  <div class="col-12 col-lg-8 text-right">
+  <div class="col-12 col-lg-8 text-right text-lg-left">
 
-    @image('foto_destacada','featured', ['class' => 'img-fluid'])
+    @image('foto_destacada','featured', ['class' => 'img-fluid mb-2 mb-lg-0'])
 
   </div>
 </div>
@@ -40,7 +40,7 @@
 
 {{-- actividades --}}
 <div class="row pt-2 mb-4">
-  <div class="col-12 d-flex justify-content-between align-items-baseline mb-1">
+  <div class="col-12 d-flex justify-content-between align-items-baseline mb-lg-1">
     <h2 class="text-uppercase">
       {{ __('ACTIVIDADES', 'automaticatheme') }}
     </h2>
@@ -56,7 +56,7 @@
   ])
 
   @posts
-  <div class="col-12 col-lg-6 f-small mt-3 mt-lg-0">
+  <div class="col-12 col-lg-6 f-small mb-3 mb-lg-0">
     <a href="@permalink">
       <img class="img-fluid mb-2" src="@thumbnail('grande', false)" alt="">
       <div class="d-lg-flex justify-content-between">
@@ -74,7 +74,7 @@
 
 {{-- talleres --}}
 <div class="row pt-2 mb-5 pb-lg-5">
-  <div class="col-12 d-flex justify-content-between align-items-end mb-1">
+  <div class="col-12 d-flex justify-content-between align-items-end">
     <h2 class="text-uppercase">
       {{ __('TALLERES', 'automaticatheme') }}
     </h2>

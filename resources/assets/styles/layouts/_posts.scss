@@ -57,9 +57,14 @@ h1.entry-title {
 //impresos
 .label {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 10px;
+  right: 15px;
   padding: 5px 15px;
   background-color: white;
   border-radius: 3rem;
+
+  @include media-breakpoint-up(lg) {
+    top: 30px;
+    right: 30px;
+  }
 }

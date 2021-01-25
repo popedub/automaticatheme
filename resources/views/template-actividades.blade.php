@@ -16,7 +16,7 @@
 @include('partials.featured')
 @endposts
 
-<div class="col-12 mb-1">
+<div class="col-12 mb-lg-1">
   <div class="t-bigger mb-2">
     @include('partials.page-header')
   </div>

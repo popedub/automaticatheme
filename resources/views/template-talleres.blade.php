@@ -15,7 +15,7 @@
   <h2 class="t-bigger text-uppercase d-none d-lg-block">{{ __('Próximo taller','automaticatheme') }}</h2>
   <div class="col-12 col-lg-4 d-flex flex-column justify-content-between order-2 order-lg-1">
     <div>
-      <h3 class="f-regular">@title</h3>
+      <h3 class="f-regular mb-0 mb-lg-2">@title</h3>
       <span class="f-regular">@field('fecha')</span>
 
     </div>
@@ -24,15 +24,14 @@
     </div>
   </div>
   <div class="col-12 col-lg-8 order-1 order-lg-2">
-    <img class="img-fluid mb-3" src="@thumbnail('featured', false)" alt="">
+    <img class="img-fluid mb-2" src="@thumbnail('featured', false)" alt="">
     <h2 class="t-bigger text-uppercase d-block d-lg-none">{{ __('Próximo taller','automaticatheme') }}</h2>
   </div>
   @endfield
   @endposts
 
-  <h3 class="t-bigger text-uppercase pt-3 mb-2 d-none d-lg-block">{{ __('Talleres', 'automaticatheme') }}</h3>
   <div class="col-12 f-regular order-3 order-lg-3 mt-3 mt-lg-0">
-    <h3 class="t-bigger text-uppercase pt-3 mb-2 d-block d-lg-none">{{ __('Talleres', 'automaticatheme') }}</h3>
+    <h3 class="t-bigger text-uppercase pt-3 mb-2">{{ __('Talleres', 'automaticatheme') }}</h3>
     @field('intro')
   </div>
   @php

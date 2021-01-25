@@ -6,7 +6,7 @@
 
 @section('content')
 <div class="row">
-  <div class="col-12 t-bigger text-uppercase">
+  <div class="col-12 t-bigger text-uppercase d-none d-lg-block">
     {!! __('L&#39;Automatica','automaticatheme') !!}
   </div>
 </div>

@@ -136,13 +136,13 @@ a.wpml-ls-link > span {
 }
 
 .border-phone {
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
 }
 
 .border-phone:first-child {
-  border-top: 2px solid black;
+  border-top: 1px solid black;
 }
 
 .giro {
-  rotate: 90deg;
+  transform: rotate(90deg);
 }
